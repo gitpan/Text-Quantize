@@ -14,4 +14,4 @@ meta-spec:
 name: Text-Quantize
 requires:
   Sub::Exporter: 0
-version: 0.04
+version: 0.05
