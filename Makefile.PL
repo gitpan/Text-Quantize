@@ -19,8 +19,10 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Text::Quantize",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.03",
+  "PREREQ_PM" => {
+    "Sub::Exporter" => 0
+  },
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }

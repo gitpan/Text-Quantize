@@ -3,6 +3,13 @@ package Text::Quantize;
 use strict;
 use warnings;
 use List::Util 'sum';
+use Sub::Exporter -setup => {
+    exports => ['quantize', 'bucketize'],
+    groups  => {
+        default => ['quantize'],
+    },
+};
+
 
 sub bucketize {
     my $elements = shift;
@@ -146,7 +153,7 @@ Text::Quantize - render a list of numbers as a textual chart
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -163,7 +170,7 @@ version 0.03
         64 |@@@@@@@@                                 1
        128 |                                         0
 
-
+=head1 FUSSY SYNOPSIS
 
     use Text::Quantize ();
 
